@@ -1,35 +1,29 @@
 #include <iostream>
-#include <string.h>
 #include <string>
+#include <string.h>
+
 using namespace std;
 
-bool Busca(char vetor[], char letra){
-  for (int i=0; i<strlen (vetor); i++){
-    return true;
-  }
-  return (int i ++);
-  
-}
-int main(){
 
-  char Palavra[50];
-  string letra [0];
- 
+int main() {
+
+  string Palavra ;
+  int i;
+
   cout<<"Digite uma palavra"<<endl;
-  cin >> Palavra;
+  getline (cin, Palavra);
+  
 
-  for (int i=0; i <strlen(Palavra); i++){
+for (int i=0; i<Palavra.size(); i++){
 
-    if (Busca(Palavra ,'a')){
-      cout<< "#2 = 1" <<endl;
+    if (Palavra [i] == 'a'){
+    cout<<"#2 = 1"<<endl;
     }
-
-    else if (Busca(Palavra,'b')){
-      cout<< "#2 = 2" <<endl;
-    }
-
-    else if (Busca(Palavra,'c')){
-      cout<< "#2 = 3"<<endl;
-    }
-  }
+     else if (Palavra [i] == 'b'){
+    cout<<"#2 = 2"<<endl;
+     }
+      else if (Palavra [i] == 'c'){
+    cout<<"#2 = 3"<<endl;
+     }
+}
 }
