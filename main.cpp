@@ -12,10 +12,10 @@ int main() {
 
   cout<<"Digite uma palavra"<<endl;
   getline (cin, Palavra);
-  
+
 
 for (int i=0; i<Palavra.size(); i++){
-
+    
     if ((Palavra [i] == 'a')||(Palavra [i] =='A')){
     cout<<"#2 = 1"<<endl;
     }
@@ -93,9 +93,12 @@ for (int i=0; i<Palavra.size(); i++){
      }
       else if ((Palavra [i] == 'z')||(Palavra [i] =='Z')){
     cout<<"#9 = 4"<<endl;
-     } else {
+     } 
+     else if (Palavra [i] == ' '){
+    cout<<" "<<endl;
+     }else {
        return 0;
        }
+    
      }
-  
   }
